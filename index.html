@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        window.onload = function () {
+            var sidemeu = document.getElementById("sidemenu");
+
+            window.openmenu = function () {
+                    sidemeu.style.right = "0";
+            };
+
+            window.closemenu = function () {
+                    sidemeu.style.right = "-200px";
+            };
+        };
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apurba Afiat Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo.png" class="logo">
+            
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a> </li>
+                <li><a href="#about">About</a> </li>
+                <li><a href="#portfolio">Portfolio</a> </li>
+                <li><a href="#Contact">Contact</a> </li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Computer Science Graduate</p>
+            <h1>Hi, I'm <span>Apurba</span><br> Afiat From Bangladesh</h1>
+        </div>
+    
+    </div>
+
+</div>
+<!----------------------about---------->
+<div id="about"> 
+    <div class=" container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/My picture.jpg">
+
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>My name is Apurba Afiat, a Computer Science graduate from BRAC University with a strong academic interest in Artificial Intelligence and Machine Learning. I am currently expanding my skill set by learning the MERN Stack to pursue a career as a full stack developer. I aspire to become a data scientist and I am driven to work in a dynamic corporate environment where I can continuously grow and contribute. Known for my adaptability, I thrive in diverse situations and am always eager to embrace new challenges. Outside of my academic and professional interests, I enjoy traveling and exploring new places.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills"> 
+                    <ul>
+                        <li><span>Programming Languages</span><br>C, Python, Java</li>
+                        <li><span>Web Development</span><br>HTML, CSS, Javascript, PHP, Wordpress Development</li>
+                        <li><span>Machine Learning</span><br>Pytorch, Tensorflow, Keras</li>
+                        <li><span>Other skills</span><br>Professional Video editing, Canva, Latex, Excel and other microsoft services</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>February 2025 - May 2025</span><br>Intern, Brainiaxs IT</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2021 - 2025</span><br>Bachelors in Computer Science<br> BRAC University</li>
+                        <li><span>2013- 2020</span><br>Military Collegiate School, Khulna</li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--------portfolio-------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/Detection of Monkeypox using Deep Learning (650 x 800 px).png">
+                <div class="layer">
+                    <h3>Machine Learning Project</h3>
+                    <p>A deep learning-based system developed to detect Monkeypox using real-world clinical image datasets.The model aims for accurate and early diagnosis through automated image analysis.This project supports scalable disease detection in diverse healthcare settings.</p>
+                    <a href="https://github.com/ApurbaAfiat/CSE424-Pattern-Recognition--Summer-2024"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+             <div class="work">
+                <img src="Images/Bank Management System (650 x 800 px).png">
+                <div class="layer">
+                    <h3>Bank Management System</h3>
+                    <p>A console-based Bank Management System developed in C for handling basic banking operations.
+Features include account creation, deposit, withdrawal, and balance inquiry.
+The system uses file handling for data storage and retrieval.</p>
+                    <a href="https://github.com/ApurbaAfiat/Bank-Management-System"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+             <div class="work">
+                <img src="Images/Resturant.png">
+                <div class="layer">
+                    <h3>Machine Learning Project</h3>
+                    <p>Developed a machine learning-based system to predict restaurant ratings in Dhaka, offering fast, unbiased, and data-driven evaluations to enhance diner decision-making and resource efficiency.</p>
+                    <a href="https://github.com/ApurbaAfiat/CSE422-ML-Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+             <div class="work">
+                <img src="Images/Shooting.png">
+                <div class="layer">
+                    <h3>Game Development</h3>
+                    <p>A simple shooting game made with python</p>
+                    <a href="https://github.com/ApurbaAfiat/Basic-shooting-game"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+             <div class="work">
+                <img src="Images/Parking Management System.png">
+                <div class="layer">
+                    <h3>Web Development Project</h3>
+                    <p>A Parking Management System to monitor and manage vehicle entries, exits, and slot availability.
+It streamlines parking operations using a user-friendly interface and real-time tracking</p>
+                    <a href="https://github.com/ApurbaAfiat/CSE370-Project-Group-5"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/DClock.png">
+                <div class="layer">
+                    <h3>Python Project</h3>
+                    <p>A digital clock that displays the current time using a real-time updating interface.</p>
+                    <a href="https://github.com/ApurbaAfiat/Digital-Clock-"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/Sketch.png">
+                <div class="layer">
+                    <h3>Python Project</h3>
+                    <p>A Python program that generates digital sketches using drawing libraries</p>
+                    <a href="https://github.com/ApurbaAfiat/Turning-images-into-pencil-sketch-using-python"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/DXball.png">
+                <div class="layer">
+                    <h3>Game Development</h3>
+                    <p>A simple ball game developed with Python where the player controls a paddle to bounce the ball.</p>
+                    <a href="https://github.com/ApurbaAfiat/Simple-ball-catching-game"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+            
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+
+
+<!-------------------contact------->
+<div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>apurba.afiat@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+8801868112233</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/apurba.afiat.2024/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/afiat_1409/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/apurba-afiat/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/ApurbaAfiat"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="Images/Apurba_Afiat_CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>          
+                </form>
+                <span id="msg"></span>
+            </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2025 Apurba Afiat. All rights reserved.</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+
+
+<script>
+    function openMenu() {
+        document.getElementById("sidemenu").style.right = "0";
+    }
+
+    function closeMenu() {
+        document.getElementById("sidemenu").style.right = "-200px";
+    }
+
+
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxjuU3uLiMomAgqNw3JSWEw6-u1IaS0EdENqsP1HQF2QxdHfHSMgvqiAw6nzf7Ww7aM6g/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg= document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then (response => {
+            msg.innerHTML= "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
+
+
+</body>
+</html>
+
+
