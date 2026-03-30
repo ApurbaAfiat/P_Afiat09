@@ -130,6 +130,30 @@ design, test scenarios, exploratory testing), Unit Testing(Jest), Selenium, JMet
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
             <div class="work">
+                <img src="Images\Bilingual_Wash_Qa.png">
+                <div class="layer">
+                    <h3>AI-Powered WASH Data Assistant</h3>
+                    <p>Developed a multilingual (Bangla & English) question-answering system leveraging RAG, FAISS, and sentence embeddings for health data retrieval.</p>
+                    <a href="https://github.com/ApurbaAfiat/BILINGUAL-WASH-QA-ENHANCING-HEALTH-DATA-ACCESS-WITH-MULTILINGUAL-AI"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images\Policy Document AI Chatbot.png">
+                <div class="layer">
+                    <h3>AI Policy Analysis Chatbot</h3>
+                    <p>Built an advanced RAG-based AI chatbot to analyze financial policy documents with context-aware Q&A and accurate citations.</p>
+                    <a href="https://github.com/ApurbaAfiat/AI-Powered-Chatbot"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+             <div class="work">
+                <img src="Images\Ecommerce_web_application.png">
+                <div class="layer">
+                    <h3>Full-Stack Ecommerce Platform</h3>
+                    <p>Engineered a full-stack ecommerce platform with Redux state management, RESTful APIs, and localized payment support.</p>
+                    <a href="https://github.com/ApurbaAfiat/Ecommerce-project-using-MERN-Stack"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
                 <img src="Images/Detection of Monkeypox using Deep Learning (650 x 800 px).png">
                 <div class="layer">
                     <h3>Machine Learning Project</h3>
@@ -199,7 +223,7 @@ It streamlines parking operations using a user-friendly interface and real-time 
             
             
         </div>
-        <a href="#" class="btn">See more</a>
+        <button class="btn" id="showMoreBtn" onclick="toggleShowMore()">See more</button>
     </div>
 </div>
 
@@ -256,6 +280,18 @@ It streamlines parking operations using a user-friendly interface and real-time 
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    function toggleShowMore() {
+        var workList = document.querySelector(".work-list");
+        var btn = document.getElementById("showMoreBtn");
+        workList.classList.toggle("show-all");
+        
+        if (workList.classList.contains("show-all")) {
+            btn.textContent = "Show less";
+        } else {
+            btn.textContent = "See more";
+        }
     }
 
 </script>

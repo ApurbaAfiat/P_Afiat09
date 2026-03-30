@@ -175,6 +175,14 @@ nav ul li a:hover::after{
     margin-top: 50px;
 }
 
+.work-list .work:nth-child(n+5) {
+    display: none;
+}
+
+.work-list.show-all .work:nth-child(n+5) {
+    display: block;
+}
+
 .work{
     border-radius: 10px;
     position: relative;
@@ -237,6 +245,10 @@ nav ul li a:hover::after{
     text-decoration: none;
     color: #fff;
     transition: background 0.5s;
+    cursor: pointer;
+    background: none;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
 }
 .btn:hover{
     background: #ff004f;
